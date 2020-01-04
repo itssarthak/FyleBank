@@ -1,0 +1,245 @@
+body{
+    font-family: sans-serif; 
+    color: #fff;
+    background: #000;
+    background: radial-gradient(#222, #000);
+}
+
+#city
+{
+    margin: 1%;
+    margin-left: 20%;
+    min-width: 90px;
+    min-height: 30px;
+    border-radius: 7px; 
+    outline: none;
+    padding-left: 10px;
+}
+
+.cities
+{
+   outline: none;
+   border-radius: 10px;
+}
+
+#searchbox
+{
+    margin: 1%;
+    margin-left: 35%;
+    min-height: 20px;
+    border-radius: 7px; 
+    outline: none;
+    width: 30%;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#fetched_data
+{
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    overflow: auto;
+}
+
+td{
+    width :20%;
+    height: 50px;
+    text-align: left;
+    padding-left: 20px;
+}
+th{
+    border : solid #aaa 2px;
+    border-radius: 10px;
+}
+tr{
+    border : solid #aaa 2px;
+    border-radius: 10px;
+}
+
+.fav
+{
+    
+    max-width: 20px;
+    text-align: center;
+    padding-left: 0px;
+}
+.heart
+{
+    max-height: 25px;
+}
+
+#count
+{
+    margin-left: 6%;
+    min-width: 90px;
+    min-height: 30px;
+    border-radius: 7px; 
+    outline: none;
+    padding-left: 10px;
+}
+
+#pager
+{
+    float:right;
+    margin-right: 5%;
+}
+
+#selectpage
+{
+    margin-top: 15px;
+}
+
+#selected
+{
+    background-color: #fff;
+    color: #000;
+    padding: 3px;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+
+#pages
+{
+   min-width:15px;
+}
+
+.pageno
+{
+    display:inline-block;
+    width: 25px;
+    margin: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagechange
+{
+    text-align: center;
+}
+
+.pagechange:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+#loader {
+    background: #000;
+    background: radial-gradient(#222, #000);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+#loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+#loader-line-wrap {
+    animation: 
+		spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+	;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+#loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+#loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+#loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+#loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+#loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+#loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+#loader-line-wrap:nth-child(1) #loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+#loader-line-wrap:nth-child(2) #loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+#loader-line-wrap:nth-child(3) #loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+#loader-line-wrap:nth-child(4) #loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+#loader-line-wrap:nth-child(5) #loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#fetched_data::-webkit-scrollbar {
+  width: 7px;
+  background-color: #333;
+  border: #333 solid 0.5px;
+  border-radius: 50%;
+}
+ 
+
+#fetched_data::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  /*border-radius: 100%;*/
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}

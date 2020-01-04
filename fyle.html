@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fyle Bank</title>
+	<script src="fyle.js"></script>
+	<link rel="stylesheet" href="fyle.css">
+</head>
+<body class="noselect" onload="getdata(document.getElementById('city').value)">
+	<div id=data>
+	<input type="text" id=searchbox placeholder="Search" onkeyup="search(this.value)"> 
+	<select id=city onchange="getdata(this.value,document.getElementById('count').value)">
+		<option class=cities value="BANGALORE" >Bangalore</option>
+		<option class=cities value="CHANDIGARH">Chandigarh</option>
+		<option class=cities value="DELHI">Delhi</option>
+		<option class=cities value="MUMBAI">Mumbai</option>
+		<option class=cities selected value="KOLKATA">Kolkata</option>
+	</select>
+	<div id=fetched_data>
+		<table id=bankdata>
+		</table>
+	</div>
+	<div id=selectpage>
+		<select id=count onchange="displaydata(1)">
+		<option value="5">5</option>
+		<option selected value="10">10</option>
+		<option value="20">20</option>
+		<option value="50">50</option>
+		<option value="100">100</option>
+	</select>
+		<span id=pager>
+			<a class="pagechange noselect" onclick="prevpage()"><</a>
+			<span id=pages></span>
+			<a class="pagechange noselect" onclick="nextpage()">></a>
+		</span>
+	</div>
+	</div>
+	<div id="loader">
+	<div id="loader-inner">
+		<div id="loader-line-wrap">
+			<div id="loader-line"></div>
+		</div>
+		<div id="loader-line-wrap">
+			<div id="loader-line"></div>
+		</div>
+		<div id="loader-line-wrap">
+			<div id="loader-line"></div>
+		</div>
+		<div id="loader-line-wrap">
+			<div id="loader-line"></div>
+		</div>
+		<div id="loader-line-wrap">
+			<div id="loader-line"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
